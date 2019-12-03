@@ -9,9 +9,9 @@ broadcastFrame.setup = function() {
         }
         //function to process broadcast messages
         function func(e) {
-            if (e.data instanceof Blob) {
+            if (e.data.image instanceof Blob) {
                 //if message is a blob create a new image element and add to page
-                var blob = e.data;
+                var blob = e.data.image;
                 var newImg = document.createElement("img"),
                     url = URL.createObjectURL(blob);
                 newImg.onload = function() {
