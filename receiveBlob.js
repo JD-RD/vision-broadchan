@@ -5,7 +5,7 @@ var broadcastFrame = {};
 broadcastFrame.setup = function() {
     if ("BroadcastChannel" in window) {
         if (typeof broadcastFrame.channel === 'undefined' || !broadcastFrame.channel) {
-            broadcastFrame.channel = new BroadcastChannel("foo");
+            broadcastFrame.channel = new BroadcastChannel("blob_bus");
         }
         //function to process broadcast messages
         function func(e) {

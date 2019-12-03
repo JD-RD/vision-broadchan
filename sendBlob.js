@@ -5,7 +5,7 @@ broadcastExample.setupChannel = function() {
         if (typeof broadcastExample.channel === 'undefined' || 
            !broadcastExample.channel) {
             //create channel
-            broadcastExample.channel = new BroadcastChannel("foo");
+            broadcastExample.channel = new BroadcastChannel("blob_bus");
         }
     }
 }
